@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Young's Double Slit Experiment</title>
+    <style>
+        body{
+            background-color: #000;
+            font-family: sans-serif;
+            font-size: 1.2em;
+            color: #fff;
+        }
+        #main{
+            width: 80%;
+            margin: auto;
+            box-shadow: 0 0 10px #999;
+            padding: 20px;
+            background-color: #000;
+        }
+        #title{
+            text-align: center;
+            margin-bottom: 20px;
+            font-family:serif;
+            font-size:3em;
+            font-weight: bold;
+            color: #fff;
+        }
+        #intro{
+            font-family:serif;
+            font-size:2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        #desc{
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        #calculator1{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #000;
+            text-align: center;
+            border: 1px solid #ddd;
+            font-family:serif;
+            font-size:1.2em;
+            font-weight: bold;
+            color: #fff;
+        }
+        #calculator2{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #000;
+            border: 1px solid #ddd;
+            font-family:serif;
+            font-size:1.2em;
+            font-weight: bold;
+            color: #fff;
+        }
+        #calculator{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #000;
+            border: 1px solid #ddd;
+            font-family:serif;
+            font-size:1.2em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .button { 
+            height: 50px; 
+            width: 250px; 
+        } 
+        .input{
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            font-family:serif;
+            font-size:1.1em;
+            border: 1px solid #999;
+            color: rgb(0, 0, 0);
+        }
+        .input1{
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            font-family:serif;
+            font-size:1.1em;
+            border: 1px solid #999;
+            color: rgb(0, 0, 0);
+        }
+        .input2{
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            font-family:serif;
+            font-size:1.1em;
+            border: 1px solid #999;
+            color: rgb(0, 0, 0);
+        }
+        #submit{
+            background-color:#006699;
+            color: #fff;
+            padding: 10px;
+            font-family:sans-serif;
+            font-size:1.2em;
+            border: 0;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        #result{
+            margin-top: 20px;
+            font-family:serif;
+            font-size:2em;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+        }
+        #result1{
+            margin-top: 20px;
+            font-family:serif;
+            font-size:2em;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+        }
+        #result2{
+            margin-top: 20px;
+            font-family:serif;
+            font-size:2em;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">Young's Double Slit Experiment</h1>
+        <div id="intro">Introduction</div>
+        <div id="desc">
+            In 1801, Thomas Young demonstrated the wave theory of light for the first time with a double-slit interference experiment. Young created a pinhole in the wall called S1 and S2 and allowed sunlight to pass through it. At first, S1 and S2 are at a reasonable distance from each other on the second screen.
+
+            Thomas Young demonstrated how light rays superimpose to form the patterns of light and dark bands.
+
+            On the screen, he noticed a few bands of different colours that were bright and dark. To boost the brightness of the bands, pinholes S1 and S2 are substituted with narrow slits, and the sunlight is replaced with a monochromatic source. 
+            Finally, the interference pattern, composed of evenly-spaced bright and dark fringes, is obtained.
+
+
+        </div>
+        <div id="intro"><u>What is Interference?</u></div>
+        <div id="desc">
+            Interference is a phenomenon in which two waves combine by adding their displacement together at every single point in space and time, to form a resultant wave of greater, lower, or the same amplitude. <br><br>
+            <div id="fringe-pattern" style="text-align: center;">
+                <img src="YDSE2.png" alt="Fringe Pattern" />
+            </div>
+            <b><em>Types of Interference</em></b><br><br>
+            <b><em><u>1. Constructive Interference : </u></em></b><br>
+            If the crest of one wave falls on the crest of another wave, then the amplitude of the wave became maximum and it forms the constructive interference of light.<br>Here, the resultant waves will have the same phase and the same displacement.<br><br>
+            <b><em><u>2. Destructive Interference : </u></em></b><br>
+            If the crest of one wave falls on the dip of another wave, then the amplitude of the wave becomes minimum. This phenomenon is called destructive interference.<br>Here, the phase and displacement of the resultant wave are not the same.
+            <div id="fringe-pattern" style="text-align: center;">
+                <img src="YDSE3.png" alt="Fringe Pattern" />
+            </div>
+
+        </div>
+        
+        <div id="intro"><u>Setup for the Experiment</u></div>
+        <div id="desc">
+            When conducting Young’s double-slit experiment, two coherent sources of light must be situated at a distance that is larger than the wavelength of light. Young’s double-slit experiment clarified the light wave theory.
+
+            A single light source was diffracted into two slits and employed as a coherent source in the original Young experiment. Modern experiments frequently use lasers as coherent sources.
+
+            <div id="fringe-pattern" style="text-align: center;">
+                <img src="YDSE1.jpg" alt="Fringe Pattern" />
+            </div>
+        </div>
+        <div id="intro"><u>Derivation of Young’s Double Slit Experiment</u></div>
+        <div id="desc">
+            
+            Consider a monochromatic light source ‘S’ kept at a considerable distance from two slits s1 and s2. S is equidistant from s1 and s2. s1 and s2 behave as two coherent sources as both are derived from S.<br><br>
+            
+            The light passes through these slits and falls on a screen which is at a distance ‘D’ from the position of slits s1 and s2. ‘d’ is the separation between two slits.<br><br>
+            
+            If s1 is open and s2 is closed, the screen opposite to s1 is closed, and only the screen opposite to s2 is illuminated. The interference patterns appear only when both slits s1 and s2 are open.<br><br>When the slit separation (d) and the screen distance (D) are kept unchanged, to reach P the light waves from s1 and s2 must travel different distances. It implies that there is a path difference in Young’s double slit experiment between the two light waves from s1 and s2.
+        </div>
+        
+        <div id="desc">
+            
+            
+            
+            <b>Approximations in Young’s double slit experiment</b><br><br>
+            
+            <b><u>Approximation 1:</b></u> D > > d: Since D > > d, the two light rays are assumed to be parallel.<br>
+            <b><u>Approximation 2:</b></u> d/λ >> 1: Often, d is a fraction of a millimetre, and λ is a fraction of a micrometre for visible light.<br><br>
+            Under these conditions, θ is small. Thus, we can use the approximation sin θ = tan θ ≈ θ = λ/d.
+            <br>
+            ∴ path difference,<b> Δz = λ/d</b><br>
+            
+            This is the path difference between two waves meeting at a point on the screen. Due to this path difference in Young’s double-slit experiment, some points on the screen are bright, and some points are dark<br><br>
+        </div>
+        
+        <div id="intro"><u>Position of Fringes In Young’s Double Slit Experiment</u></div>
+        <div id="desc">
+            <b><em><u>Position of Bright Fringes</u></em></b><br>
+            
+            For maximum intensity or bright fringe to be formed at P<br>
+
+            Path difference, Δz = nλ (n = 0, ±1, ±2, . . . .)<br>
+
+            i.e., xd/D = nλ<br>
+
+            or<br>
+
+            x = nλD/d<br>
+
+            The distance of the nth  bright fringe from the centre is<br>
+
+            xn = nλD/d<br>
+
+            Similarly, the distance of the (n-1)th bright fringe from the centre is<br>
+
+            x (n-1)= (n -1)λD/d<br>
+
+            Fringe width,  β = xn  – x (n-1) = nλD/d – (n -1)λD/d = λD/d<br>
+
+            (n = 0, ±1, ±2, . . . .)<br><br>
+
+            <b><em><u>Position of Dark Fringes</b></u></em><br>
+            For minimum intensity or dark fringe to be formed at P,<br>
+
+            Path difference, Δz = (2n + 1) (λ/2) (n = 0, ±1, ±2, . . . .)<br>
+
+            i.e., x = (2n +1)λD/2d<br>
+
+            The distance of the nth  dark fringe from the centre is<br>
+
+            xn = (2n+1)λD/2d<br>
+
+            Similarly, the distance of the (n-1)th bright fringe from the centre is<br>
+
+            x (n-1)= (2(n-1) +1)λD/2d<br>
+
+            Fringe width, β = xn  – x (n-1) = (2n + 1) λD/2d – (2(n -1) + 1)λD/2d = λD/d<br>
+
+            (n = 0, ±1, ±2, . . . .)<br>
+
+
+        </div>
+    
+    </div>
+        
+</div>
+<div id="intro"><br><u><b>BRIGHT FRINGE CALCULATOR</b></u></div>
+<div id="desc">
+</div>  
+    <div id="calculator">
+        <div>
+            <label>Enter the value of n:</label>
+            <input type="text" name="n" id="n" class="input" />
+        </div>
+        <div>
+            <label>Enter the value of D[in m]:</label>
+            <input type="text" name="D" id="D" class="input" />
+        </div>
+        <div>
+            <label>Enter the value of d[in m]:</label>
+            <input type="text" name="d" id="d" class="input" />
+        </div>
+        <div>
+            <label>Enter the value of λ[in m]:</label>
+            <input type="text" name="l" id="l" class="input" />
+        </div>
+        <div>
+            <input type="button" class="button" value="CALCULATE" name="calculate" id="calculate" value="Calculate" onclick="calculateFringePosition()" />
+        </div>
+        <div id="result"></div>
+    </div>
+</div>
+<script>
+    function calculateFringePosition(){
+        let n = document.getElementById('n').value;
+        let D = document.getElementById('D').value;
+        let d = document.getElementById('d').value;
+        let l = document.getElementById('l').value;
+        let result = document.getElementById('result');
+        let fringePosition = (l*n*D) / d;
+        result.innerHTML = "The bright fringe position is:  " + fringePosition +" m";
+    }
+</script>
+
+
+
+
+</div>
+<div id="intro"><br><u><b>DARK FRINGE CALCULATOR</b></u></div>
+<div id="desc">
+
+
+
+
+
+<div id="calculator1">
+    <div>
+        <label>Enter the value of n:</label>
+        <input type="text" name="n1" id="n1" class="input1" />
+    </div>
+    <div>
+        <label>Enter the value of D[in m]:</label>
+        <input type="text" name="D1" id="D1" class="input1" />
+    </div>
+    <div>
+        <label>Enter the value of d[in m]:</label>
+        <input type="text" name="d1" id="d1" class="input1" />
+    </div>
+    <div>
+        <label>Enter the value of λ[in m]:</label>
+        <input type="text" name="l1" id="l1" class="input1" />
+    </div>
+    <div>
+        <input type="button" class="button" value="CALCULATE" name="calculate" id="calculate1" value="Calculate" onclick="calculateFringePosition1()" />
+    </div>
+    <div id="result1"></div>
+</div>
+
+</div>
+<script>
+function calculateFringePosition1(){
+    let n1 = document.getElementById('n1').value;
+    let D1 = document.getElementById('D1').value;
+    let d1 = document.getElementById('d1').value;
+    let l1 = document.getElementById('l1').value;
+    let result1 = document.getElementById('result1');
+    let darkFringePosition1 = (l1*((2*n1)-1)*D1) / d1;
+    result1.innerHTML = "The dark fringe position is:  " + darkFringePosition1 +" m";
+}
+</script>
+
+
+
+<div id="calculator2">
+    <div>
+        <label>Enter the value of n:</label>
+        <input type="text" name="n2" id="n2" class="input2" />
+    </div>
+    <div>
+        <label>Enter the value of D[in m]:</label>
+        <input type="text" name="D2" id="D2" class="input2" />
+    </div>
+    <div>
+        <label>Enter the value of d[in m]:</label>
+        <input type="text" name="d2" id="d2" class="input2" />
+    </div>
+    
+    <div>
+        <input type="button" class="button" value="CALCULATE" name="calculate" id="calculate2" value="Calculate" onclick="calculateFringePosition2()" />
+    </div>
+    <div id="result2"></div>
+</div>
+
+</div>
+<script>
+function calculateFringePosition2(){
+    let n2 = document.getElementById('n2').value;
+    let D2 = document.getElementById('D2').value;
+    let d2 = document.getElementById('d2').value;
+    
+    let result1 = document.getElementById('result2');
+    let darkFringePosition2 = (D2*n2) / d2;
+    result2.innerHTML = "The fringe width is: " + darkFringePosition2+" m";
+}
+</script>
+<div id="body"><u><center><br><br>Created By : Lakshya Kandpal and Raj Aryan</center></u></div>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
