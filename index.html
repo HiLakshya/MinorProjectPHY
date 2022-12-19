@@ -336,7 +336,7 @@ function calculateFringePosition1(){
     let d1 = document.getElementById('d1').value;
     let l1 = document.getElementById('l1').value;
     let result1 = document.getElementById('result1');
-    let darkFringePosition1 = (l1*((2*n1)-1)*D1) / d1;
+    let darkFringePosition1 = (l1*((2*n1)-1)*D1) / (2*d1);
     result1.innerHTML = "The position of dark fringe is:  " + darkFringePosition1 +" m";
 }
 </script>
@@ -345,7 +345,7 @@ function calculateFringePosition1(){
 
 <div id="calculator2">
     <div>
-        <label>Enter the value of n:</label>
+        <label>Enter the value of λ[in m]:</label>
         <input type="text" name="n2" id="n2" class="input2" />
     </div>
     <div>
